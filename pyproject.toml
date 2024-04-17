@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "pydata"
+version = "0.1.0"
+description = "A python package for preliminary data exploration"
+authors = ["Minjoo cho"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+jupyterlab = "^4.1.6"
+pandas = "^2.2.2"
+plotly = "^5.21.0"
+numpy = "^1.26.4"
+dash = "^2.16.1"
+plotly-express = "^0.4.1"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+import-ipynb = "^0.1.4"
+
+[tool.poetry.scripts]
+pydata = "pydata.cli.main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
