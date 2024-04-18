@@ -1,6 +1,6 @@
-# pydata
-
-A python package for preliminary data exploration
+# Python project for preliminary data exploration
+This project is to introduce the python project setup for preliminary data exploration, especially to work in iterative design sprints.
+- Author : Minjoo (minjoolisa.cho@gmail.com)
 
 ## 1. 🤓 Install pydata package
 
@@ -59,7 +59,37 @@ If you want to deactivate the virtual environment, simply type
 ```bash
 deactivate
 ```
-## 3. Run command
+
+## 2. Folder Structure 
+```
+  .
+  ├── data/
+  │   └── your_data_goes_here
+  ├── docs/
+  │   ├── report/
+  │   │   └── Generated_report.html 
+  │   ├── example.ipynb
+  │   └── index.md
+  ├── exploration/
+  │   ├── jupymodule/
+  │   │   ├── arguments.json # place to store argument to pass to ipynb report
+  │   │   ├── DataFrameMaker.ipynb # place to test and run ETL scheme
+  │   │   └── Visualiser.ipyb # reusable visualisation fuction to use i the report
+  │   ├── AllReport.ipynb # All user-level report
+  │   └── UserReport.ipynb # Single user-level report
+  ├── src/
+  │   └── pydata # python library to use throughout the project/
+  │       ├── cli # cli command to run dash or create report
+  │       ├── dash # plotly dash to implement high-fidelity data visualisation prototype
+  │       └── utils # utils to be used in ETL process 
+  ├── tests/
+  │   └── test_pydata.py # place to write test codes
+  ├── poetry.lock # do not change this file
+  ├── pyproject.toml # project dependencies
+  └── README.md 
+```
+## 3. Supported commands
+As you install `pydata` library in the development evironment with `poetry install` command, you are able to run several commands to help you generating the html report and run Plotly dashboard
 
 ### 3.1 Run command to run example dashboard
 ```
@@ -95,7 +125,7 @@ This dataset contains information from 3,395 high resolution electric vehicle ch
 
 Source: [https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/NFPQLW](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/NFPQLW)
 
-## Building the documentation and host to github page
+## Building the documentation
 
 ### Build page
 Navigate to `docs` folder and run the following command
