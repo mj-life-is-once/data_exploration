@@ -137,7 +137,11 @@ Navigate to `docs` folder and run the following command
   ```
 
   This will generate `_build` folder with generated html
-
+### Host to Github page
+  Run follwoing command from the root project folder. This command will write a commit to your gh-pages branch with the current documents in it and push the change to the remote `gh-page` branch
+  ```bash
+    ghp-import -n -p -f docs/_build/html
+  ```
   
 ## Contributing
 
