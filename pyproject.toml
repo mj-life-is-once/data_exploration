@@ -14,11 +14,17 @@ plotly = "^5.21.0"
 numpy = "^1.26.4"
 dash = "^2.16.1"
 plotly-express = "^0.4.1"
-
-[tool.poetry.dev-dependencies]
+jupyter-contrib-nbextensions = "^0.7.0"
+notebook = "6.4.12"
+dash-bootstrap-components = "^1.5.0"
+dash-bootstrap-templates = "^1.1.2"
 
 [tool.poetry.group.dev.dependencies]
 import-ipynb = "^0.1.4"
+pytest = "^8.1.1"
+myst-nb = "^1.0.0"
+sphinx-autoapi = "^3.0.0"
+sphinx-rtd-theme = "^2.0.0"
 
 [tool.poetry.scripts]
 pydata = "pydata.cli.main:main"

@@ -23,16 +23,14 @@ def main(args=None) -> None:
         if read_name == "UserReport.ipynb":
             userId = args[2] if len(args) > 2 else "35897499"
             run_notebook(
-                os.path.join(os.getcwd(), f"data/exploration/{read_name}"),
+                os.path.join(os.getcwd(), f"exploration/{read_name}"),
                 output_path=os.path.join(
-                    cwd, "data/exploration/report", f"Generated_report_{userId}.html"
+                    cwd, "docs/report", f"Generated_report_{userId}.html"
                 ),
                 userId=userId,
             )
         elif read_name == "AllReport.ipynb":
             run_notebook(
-                os.path.join(os.getcwd(), f"data/exploration/{read_name}"),
-                output_path=os.path.join(
-                    cwd, "data/exploration/report", "Generated_report.html"
-                ),
+                os.path.join(os.getcwd(), f"exploration/{read_name}"),
+                output_path=os.path.join(cwd, "docs/report", "Generated_report.html"),
             )

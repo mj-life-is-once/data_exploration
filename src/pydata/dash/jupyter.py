@@ -15,9 +15,7 @@ def destroyed(proc_pid):
 def run_notebook(notebook_file, output_path=None, **arguments):
     """Pass arguments to a Jupyter notebook, run it and convert to html."""
     # Create the arguments file
-    arguments_path = os.path.join(
-        os.getcwd(), "docs/exploration/jupymodule/arguments.json"
-    )
+    arguments_path = os.path.join(os.getcwd(), "exploration/jupymodule/arguments.json")
 
     with open(arguments_path, "w") as fid:
         json.dump(arguments, fid)

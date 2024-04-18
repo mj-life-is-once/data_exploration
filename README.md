@@ -83,6 +83,12 @@ pydata dash # To launch the example dashboard
   pydata report AllReport.ipynb
   ```
 
+
+## 4. Run test
+To run the test with the installed python library(pytest), run following command
+```
+poetry run pytest
+```
 ## About the data
 
 This dataset contains information from 3,395 high resolution electric vehicle charging sessions. The data contains sessions from 85 EV drivers with repeat usage at 105 stations across 25 sites at a workplace charging program. The workplace locations include facilities such as research and innovation centers, manufacturing, testing facilities and office headquarters for a firm participating in the U.S. Department of Energy (DOE) workplace charging challenge.
