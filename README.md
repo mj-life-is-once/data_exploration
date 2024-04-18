@@ -99,6 +99,7 @@ pydata dash # To launch the example dashboard
 
 #### 3.2.1 User-level report
 - Run `poetry install` command once more to install new cli
+- Navigate to the root project folder
 - Run 
   ```
   pydata report UserReport.ipynb <userId>
@@ -108,6 +109,7 @@ pydata dash # To launch the example dashboard
 	```
 #### 3.2.2 General report
 - Run `poetry install` command once more to install new cli
+- Navigate to the root project folder
 - Run 
   ```
   pydata report AllReport.ipynb
