@@ -1,0 +1,28 @@
+:py:mod:`pydata.dash.jupyter`
+=============================
+
+.. py:module:: pydata.dash.jupyter
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   pydata.dash.jupyter.destroyed
+   pydata.dash.jupyter.run_notebook
+
+
+
+.. py:function:: destroyed(proc_pid)
+
+
+.. py:function:: run_notebook(notebook_file, output_path=None, **arguments)
+
+   Pass arguments to a Jupyter notebook, run it and convert to html.
+
+

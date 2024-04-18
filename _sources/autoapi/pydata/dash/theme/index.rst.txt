@@ -1,0 +1,52 @@
+:py:mod:`pydata.dash.theme`
+===========================
+
+.. py:module:: pydata.dash.theme
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   pydata.dash.theme.ColorPalette
+
+
+
+
+.. py:class:: ColorPalette
+
+
+   Bases: :py:obj:`enum.StrEnum`
+
+   Enum where members are also (and must be) strings
+
+   .. py:attribute:: PLOTLY_DARK_BACKGROUND
+      :value: '#181414'
+
+      
+
+   .. py:attribute:: INOPERATIONAL
+      :value: '#EF553B'
+
+      
+
+   .. py:attribute:: UPTIME
+      :value: '#636EFA'
+
+      
+
+   .. py:attribute:: OPERATIONAL
+      :value: 'pink'
+
+      
+
+   .. py:attribute:: LIME
+      :value: '#eeff1b'
+
+      
+
+

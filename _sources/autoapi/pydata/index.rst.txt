@@ -1,0 +1,105 @@
+:py:mod:`pydata`
+================
+
+.. py:module:: pydata
+
+
+Subpackages
+-----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 3
+
+   __pycache__/index.rst
+   cli/index.rst
+   dash/index.rst
+   utils/index.rst
+
+
+Package Contents
+----------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   pydata.Importer
+   pydata.Loader
+   pydata.Transformer
+
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   pydata.pydataLogger
+
+
+
+Attributes
+~~~~~~~~~~
+
+.. autoapisummary::
+
+   pydata.__version__
+
+
+.. py:data:: __version__
+
+   
+
+.. py:class:: Importer
+
+
+   .. py:method:: read_csv(file_path='', *args, **kwargs) -> pandas.DataFrame
+      :staticmethod:
+
+
+   .. py:method:: test()
+      :staticmethod:
+
+
+
+.. py:class:: Loader
+
+
+   .. py:method:: write_data_to_csv(df: pandas.DataFrame, output_path: str, debug=False, **kwargs)
+      :staticmethod:
+
+
+
+.. py:function:: pydataLogger(func)
+
+   _summary_
+           Decorator to catch exceptions
+   :param func: _description_
+   :type func: _type_
+
+
+.. py:class:: Transformer
+
+
+   .. py:method:: basic_cleanup(df: pandas.DataFrame) -> pandas.DataFrame
+      :staticmethod:
+
+
+   .. py:method:: change_date_format(date: str) -> str
+      :staticmethod:
+
+
+   .. py:method:: reformat_datetime(df: pandas.DataFrame) -> pandas.DataFrame
+      :staticmethod:
+
+
+   .. py:method:: drop_columns_with_nulls(df: pandas.DataFrame, threshold=30) -> pandas.DataFrame
+      :staticmethod:
+
+
+   .. py:method:: sort_by_week(df: pandas.DataFrame) -> pandas.DataFrame
+      :staticmethod:
+
+
+

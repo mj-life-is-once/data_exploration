@@ -1,0 +1,6 @@
+:py:mod:`pydata.cli.__pycache__`
+================================
+
+.. py:module:: pydata.cli.__pycache__
+
+

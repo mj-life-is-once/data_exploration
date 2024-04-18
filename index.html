@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python project for preliminary data exploration &mdash; pydata  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=fd3f3429" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Example usage" href="example.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            pydata
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="example.html">Example usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AllReport.html">All User Report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UserReport.html">Single User Report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conduct.html">Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="autoapi/index.html">API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">pydata</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Python project for preliminary data exploration</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="python-project-for-preliminary-data-exploration">
+<h1>Python project for preliminary data exploration<a class="headerlink" href="#python-project-for-preliminary-data-exploration" title="Link to this heading"></a></h1>
+<p>This project is to introduce the python project setup for preliminary data exploration, especially to work in iterative design sprints.</p>
+<ul class="simple">
+<li><p>Author : Minjoo (minjoolisa.cho&#64;gmail.com)</p></li>
+</ul>
+<section id="install-pydata-package">
+<h2>1. 🤓 Install pydata package<a class="headerlink" href="#install-pydata-package" title="Link to this heading"></a></h2>
+<section id="what-is-python-virtual-environment">
+<h3>1.0 What is python virtual environment?<a class="headerlink" href="#what-is-python-virtual-environment" title="Link to this heading"></a></h3>
+<p>Python virtual environments create isolated contexts to keep dependencies required by different projects separate so they don’t interfere with other projects or system-wide packages.</p>
+<p><img alt="Virtual Env" src="https://www.dataquest.io/wp-content/uploads/2022/01/python-virtual-envs1-1024x576.webp" /></p>
+</section>
+<section id="create-python-virtual-environment-with-venv">
+<h3>1.1 Create python virtual environment with venv<a class="headerlink" href="#create-python-virtual-environment-with-venv" title="Link to this heading"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># at root folder</span>
+python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.data_exploration
+
+<span class="c1"># this will create a python virtual environment named &quot;data_exploration&quot;</span>
+
+<span class="c1"># activate the virtual environment</span>
+<span class="nb">source</span><span class="w"> </span>.data_exploration/bin/activate
+</pre></div>
+</div>
+</section>
+<section id="activate-the-virtual-environment-and-install-dependencies">
+<h3>1.2 Activate the virtual environment and install dependencies<a class="headerlink" href="#activate-the-virtual-environment-and-install-dependencies" title="Link to this heading"></a></h3>
+<p>With your virtual environment activated, type this command to install <a class="reference external" href="https://python-poetry.org/">poetry</a>.</p>
+<blockquote>
+<div><p>What is poetry?
+: Poetry is a widely used tool for dependency management and packaging in Python</p>
+</div></blockquote>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>poetry
+
+<span class="c1"># install all the packages and dependencies</span>
+poetry<span class="w"> </span>install<span class="w"> </span>
+</pre></div>
+</div>
+<p>Other useful poetry commands</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># add dependencies</span>
+poetry<span class="w"> </span>add<span class="w"> </span>&lt;library_name&gt;
+
+<span class="c1"># when it takes long time to revolve dependencies</span>
+poetry<span class="w"> </span>cache<span class="w"> </span>clear<span class="w"> </span>--all<span class="w"> </span>pypi
+
+<span class="c1"># add dev dependencies</span>
+poetry<span class="w"> </span>add<span class="w"> </span>&lt;library_name&gt;<span class="w"> </span>--group<span class="w"> </span>dev
+
+<span class="c1"># remove dependencies</span>
+poetry<span class="w"> </span>remove<span class="w"> </span>&lt;library_name&gt;
+
+<span class="c1"># run pytest</span>
+poetry<span class="w"> </span>run<span class="w"> </span>pytest
+</pre></div>
+</div>
+<p>If you want to deactivate the virtual environment, simply type</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>deactivate
+</pre></div>
+</div>
+</section>
+</section>
+<section id="folder-structure">
+<h2>2. Folder Structure<a class="headerlink" href="#folder-structure" title="Link to this heading"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  .
+  ├── data/
+  │   └── your_data_goes_here
+  ├── docs/
+  │   ├── report/
+  │   │   └── Generated_report.html 
+  │   ├── example.ipynb
+  │   └── index.md
+  ├── exploration/
+  │   ├── jupymodule/
+  │   │   ├── arguments.json # place to store argument to pass to ipynb report
+  │   │   ├── DataFrameMaker.ipynb # place to test and run ETL scheme
+  │   │   └── Visualiser.ipyb # reusable visualisation fuction to use i the report
+  │   ├── AllReport.ipynb # All user-level report
+  │   └── UserReport.ipynb # Single user-level report
+  ├── src/
+  │   └── pydata # python library to use throughout the project/
+  │       ├── cli # cli command to run dash or create report
+  │       ├── dash # plotly dash to implement high-fidelity data visualisation prototype
+  │       └── utils # utils to be used in ETL process 
+  ├── tests/
+  │   └── test_pydata.py # place to write test codes
+  ├── poetry.lock # do not change this file
+  ├── pyproject.toml # project dependencies
+  └── README.md 
+</pre></div>
+</div>
+</section>
+<section id="supported-commands">
+<h2>3. Supported commands<a class="headerlink" href="#supported-commands" title="Link to this heading"></a></h2>
+<p>As you install <code class="docutils literal notranslate"><span class="pre">pydata</span></code> library in the development evironment with <code class="docutils literal notranslate"><span class="pre">poetry</span> <span class="pre">install</span></code> command, you are able to run several commands to help you generating the html report and run Plotly dashboard</p>
+<section id="run-command-to-run-example-dashboard">
+<h3>3.1 Run command to run example dashboard<a class="headerlink" href="#run-command-to-run-example-dashboard" title="Link to this heading"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pydata</span> <span class="n">dash</span> <span class="c1"># To launch the example dashboard</span>
+</pre></div>
+</div>
+</section>
+<section id="run-command-to-generate-html-report">
+<h3>3.2 Run command to generate html report<a class="headerlink" href="#run-command-to-generate-html-report" title="Link to this heading"></a></h3>
+<section id="user-level-report">
+<h4>3.2.1 User-level report<a class="headerlink" href="#user-level-report" title="Link to this heading"></a></h4>
+<ul>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">poetry</span> <span class="pre">install</span></code> command once more to install new cli</p></li>
+<li><p>Navigate to the root project folder</p></li>
+<li><p>Run</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pydata</span> <span class="n">report</span> <span class="n">UserReport</span><span class="o">.</span><span class="n">ipynb</span> <span class="o">&lt;</span><span class="n">userId</span><span class="o">&gt;</span>
+
+<span class="c1"># if you want to run the report with user `35897499` </span>
+<span class="n">pydata</span> <span class="n">report</span> <span class="n">UserReport</span><span class="o">.</span><span class="n">ipynb</span> <span class="mi">35897499</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="general-report">
+<h4>3.2.2 General report<a class="headerlink" href="#general-report" title="Link to this heading"></a></h4>
+<ul>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">poetry</span> <span class="pre">install</span></code> command once more to install new cli</p></li>
+<li><p>Navigate to the root project folder</p></li>
+<li><p>Run</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pydata</span> <span class="n">report</span> <span class="n">AllReport</span><span class="o">.</span><span class="n">ipynb</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="run-test">
+<h2>4. Run test<a class="headerlink" href="#run-test" title="Link to this heading"></a></h2>
+<p>To run the test with the installed python library(pytest), run following command</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">poetry</span> <span class="n">run</span> <span class="n">pytest</span>
+</pre></div>
+</div>
+</section>
+<section id="about-the-data">
+<h2>About the data<a class="headerlink" href="#about-the-data" title="Link to this heading"></a></h2>
+<p>This dataset contains information from 3,395 high resolution electric vehicle charging sessions. The data contains sessions from 85 EV drivers with repeat usage at 105 stations across 25 sites at a workplace charging program. The workplace locations include facilities such as research and innovation centers, manufacturing, testing facilities and office headquarters for a firm participating in the U.S. Department of Energy (DOE) workplace charging challenge.</p>
+<p>Source: <a class="reference external" href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/NFPQLW">https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/NFPQLW</a></p>
+</section>
+<section id="building-the-documentation">
+<h2>Building the documentation<a class="headerlink" href="#building-the-documentation" title="Link to this heading"></a></h2>
+<section id="build-page">
+<h3>Build page<a class="headerlink" href="#build-page" title="Link to this heading"></a></h3>
+<p>Navigate to <code class="docutils literal notranslate"><span class="pre">docs</span></code> folder and run the following command</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="nb">cd</span><span class="w"> </span>docs
+
+<span class="w">  </span><span class="c1"># run make command</span>
+<span class="w">  </span>make<span class="w"> </span>html
+</pre></div>
+</div>
+<p>This will generate <code class="docutils literal notranslate"><span class="pre">_build</span></code> folder with generated html</p>
+</section>
+<section id="host-to-github-page">
+<h3>Host to Github page<a class="headerlink" href="#host-to-github-page" title="Link to this heading"></a></h3>
+<p>Run follwoing command from the root project folder. This command will write a commit to your gh-pages branch with the current documents in it and push the change to the remote <code class="docutils literal notranslate"><span class="pre">gh-page</span></code> branch</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">  </span>ghp-import<span class="w"> </span>-n<span class="w"> </span>-p<span class="w"> </span>-f<span class="w"> </span>docs/_build/html
+</pre></div>
+</div>
+</section>
+</section>
+<section id="contributing">
+<h2>Contributing<a class="headerlink" href="#contributing" title="Link to this heading"></a></h2>
+<p>Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.</p>
+</section>
+<section id="license">
+<h2>License<a class="headerlink" href="#license" title="Link to this heading"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">pydata</span></code> was created by Minjoo cho. It is licensed under the terms of the MIT license.</p>
+</section>
+<section id="credits">
+<h2>Credits<a class="headerlink" href="#credits" title="Link to this heading"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">pydata</span></code> was created with <a class="reference external" href="https://cookiecutter.readthedocs.io/en/latest/"><code class="docutils literal notranslate"><span class="pre">cookiecutter</span></code></a> and it’s largely based on the <code class="docutils literal notranslate"><span class="pre">py-pkgs-cookiecutter</span></code> <a class="reference external" href="https://github.com/py-pkgs/py-pkgs-cookiecutter">template</a>.</p>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="example.html" class="btn btn-neutral float-right" title="Example usage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Minjoo cho.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

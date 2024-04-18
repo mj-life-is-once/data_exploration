@@ -1,0 +1,25 @@
+:py:mod:`pydata.cli.main`
+=========================
+
+.. py:module:: pydata.cli.main
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   pydata.cli.main.main
+
+
+
+.. py:function:: main(args=None) -> None
+
+   _summary_
+   Main entry point for the CLI
+
+

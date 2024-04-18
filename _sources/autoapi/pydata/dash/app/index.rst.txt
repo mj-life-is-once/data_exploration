@@ -1,0 +1,26 @@
+:py:mod:`pydata.dash.app`
+=========================
+
+.. py:module:: pydata.dash.app
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   pydata.dash.app.DashReport
+
+
+
+
+.. py:class:: DashReport(output_dir=os.path.join(os.getcwd(), 'data/output'))
+
+
+   .. py:method:: importData()
+
+
+

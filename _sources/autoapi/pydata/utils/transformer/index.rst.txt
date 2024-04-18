@@ -1,0 +1,43 @@
+:py:mod:`pydata.utils.transformer`
+==================================
+
+.. py:module:: pydata.utils.transformer
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   pydata.utils.transformer.Transformer
+
+
+
+
+.. py:class:: Transformer
+
+
+   .. py:method:: basic_cleanup(df: pandas.DataFrame) -> pandas.DataFrame
+      :staticmethod:
+
+
+   .. py:method:: change_date_format(date: str) -> str
+      :staticmethod:
+
+
+   .. py:method:: reformat_datetime(df: pandas.DataFrame) -> pandas.DataFrame
+      :staticmethod:
+
+
+   .. py:method:: drop_columns_with_nulls(df: pandas.DataFrame, threshold=30) -> pandas.DataFrame
+      :staticmethod:
+
+
+   .. py:method:: sort_by_week(df: pandas.DataFrame) -> pandas.DataFrame
+      :staticmethod:
+
+
+

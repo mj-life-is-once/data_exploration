@@ -1,0 +1,27 @@
+:py:mod:`pydata.utils.logger`
+=============================
+
+.. py:module:: pydata.utils.logger
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   pydata.utils.logger.pydataLogger
+
+
+
+.. py:function:: pydataLogger(func)
+
+   _summary_
+           Decorator to catch exceptions
+   :param func: _description_
+   :type func: _type_
+
+

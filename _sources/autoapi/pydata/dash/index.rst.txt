@@ -1,0 +1,26 @@
+:py:mod:`pydata.dash`
+=====================
+
+.. py:module:: pydata.dash
+
+
+Subpackages
+-----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 3
+
+   __pycache__/index.rst
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   app/index.rst
+   jupyter/index.rst
+   theme/index.rst
+
+

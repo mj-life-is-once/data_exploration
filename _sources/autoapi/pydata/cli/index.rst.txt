@@ -1,0 +1,24 @@
+:py:mod:`pydata.cli`
+====================
+
+.. py:module:: pydata.cli
+
+
+Subpackages
+-----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 3
+
+   __pycache__/index.rst
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   main/index.rst
+
+
