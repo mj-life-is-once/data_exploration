@@ -17,15 +17,22 @@ def main(args=None) -> None:
         dash = DashReport()
         dash.app.run_server(debug=True)
 
-    if args and args[0] == "jupyter":
-        print("Running Jupyter Notebook")
-        read_name = args[1] if len(args) > 1 else "AutoReport.ipynb"
+    if args and args[0] == "report":
+        read_name = args[1] if len(args) > 1 else "UserReport.ipynb"
         cwd = os.getcwd()
-        userId = args[2] if len(args) > 2 else "35897499"
-        run_notebook(
-            os.path.join(os.getcwd(), f"data/exploration/{read_name}"),
-            output_path=os.path.join(
-                cwd, "data/exploration/report", f"Generated_report_{userId}.html"
-            ),
-            userId=userId,
-        )
+        if read_name == "UserReport.ipynb":
+            userId = args[2] if len(args) > 2 else "35897499"
+            run_notebook(
+                os.path.join(os.getcwd(), f"data/exploration/{read_name}"),
+                output_path=os.path.join(
+                    cwd, "data/exploration/report", f"Generated_report_{userId}.html"
+                ),
+                userId=userId,
+            )
+        elif read_name == "AllReport.ipynb":
+            run_notebook(
+                os.path.join(os.getcwd(), f"data/exploration/{read_name}"),
+                output_path=os.path.join(
+                    cwd, "data/exploration/report", "Generated_report.html"
+                ),
+            )
